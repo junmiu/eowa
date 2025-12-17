@@ -1,0 +1,13 @@
+{
+  "name": "client",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "web-dev-server --config web-dev-server.mjs",
+    "start:prod": "NODE_ENV=production web-dev-server --config web-dev-server.mjs",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "Web Components application with Vue reactivity"
+}

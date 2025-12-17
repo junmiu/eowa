@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client Application</title>
+    <style>
+      label:has(+ input:required)::after {
+        content: " *"; /* Adds an asterisk after the label text */
+        color: red;    /* Sets the color of the asterisk to red */
+        font-size: 0.9em; /* Adjust font size if needed */
+        vertical-align: top; /* Adjust vertical alignment if needed */
+      }
+    </style>
+</head>
+<body>
+    <script type="module" src="./register.mjs"></script>
+    <my-switch checked="true"></my-switch>
+</body>
+</html>
