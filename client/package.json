@@ -1,0 +1,22 @@
+{
+  "name": "client",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "dist/web-components.umd.js",
+  "module": "dist/web-components.js",
+  "exports": {
+    ".": {
+      "import": "./dist/web-components.js",
+      "require": "./dist/web-components.umd.js"
+    }
+  },
+  "scripts": {
+    "start": "web-dev-server --config web-dev-server.mjs",
+    "start:prod": "NODE_ENV=production web-dev-server --config web-dev-server.mjs",
+    "build": "rollup -c",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "Web Components application with Vue reactivity"
+}
